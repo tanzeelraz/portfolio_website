@@ -1,663 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tanzeel Raza | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Tanzeel Raza, an Advanced Full Stack Developer specializing in modern web applications, Python backend, and UI/UX design.">
+    
+    <title>Tanzeel Raza | Enterprise Full Stack Engineer</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font Awesome 6.x -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="favicon.png">
-
 </head>
 
 <body>
 
     <!--========== Loading Screen ==========-->
-
-    <div id="loader">
-
+    <div id="loader" aria-hidden="true">
         <div class="loader-circle"></div>
-
         <h2>Tanzeel Raza</h2>
-
     </div>
 
     <!--========== Scroll Progress ==========-->
-
-    <div id="progress-bar"></div>
+    <div id="progress-bar" aria-hidden="true"></div>
 
     <!--========== Header ==========-->
-
-    <header>
-
-        <a href="#" class="logo">
-            Tanzeel<span>.</span>
+    <header id="header">
+        <a href="#home" class="logo">
+            Tanzeel<span class="dot">.</span>
         </a>
 
-        <nav class="navbar">
-
-            <a href="#home" class="active">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#skills">Skills</a>
-
-            <a href="#projects">Projects</a>
-
-            <a href="#services">Services</a>
-
-            <a href="#contact">Contact</a>
-
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
         <div class="nav-icons">
-
-            <i class="fa-solid fa-moon" id="theme-btn"></i>
-
-            <i class="fa-solid fa-bars" id="menu-btn"></i>
-
+            <button id="theme-btn" aria-label="Toggle dark/light mode" class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="menu-btn" aria-label="Toggle navigation menu" class="icon-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-
     </header>
 
-    <!--========== Home Section ==========-->
+    <main>
+        <!--========== Home Section ==========-->
+        <section class="home" id="home">
+            <div class="home-content reveal">
+                <div class="badge">Available for Hire</div>
+                <h3>Hello, I'm</h3>
+                <h1>Tanzeel Raza</h1>
+                <h2>I'm <span id="typing"></span></h2>
+                <p>
+                    Passionate Full Stack Developer from Pakistan specializing in enterprise-grade web applications.
+                    I build fast, resilient, and responsive platforms with modern HTML, CSS, JavaScript, and Python architectures.
+                </p>
 
-    <section class="home" id="home">
+                <div class="social-icons">
+                    <a href="https://github.com/tanzeelraza" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tanzeelraza" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+923070408701" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    
+                </div>
 
-        <div class="home-content reveal">
-
-            <h3>Hello, I'm</h3>
-
-            <h1>Tanzeel Raza</h1>
-
-            <h2>
-                I'm
-                <span id="typing"></span>
-            </h2>
-
-            <p>
-
-                Passionate Full Stack Developer from Pakistan.
-
-                I build fast, responsive and modern websites using
-                HTML, CSS, JavaScript and Python.
-
-                I love creating beautiful user experiences and solving
-                real-world problems with clean code.
-
-            </p>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/tanzeelraza" target="_blank"><i class="fab fa-github"></i></a>
-
-                <a href="https://www.linkedin.com/in/tanzeelraza" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-                <a href="https://wa.me/+923070408701" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-
+                <div class="buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
             </div>
 
-            <div class="buttons">
-
-                <a href="#contact" class="btn">
-
-                    Hire Me
-
-                </a>
-
-                <a href="#projects" class="btn btn2">
-
-                    View Projects
-
-                </a>
-
+            <div class="home-image reveal">
+                <div class="circle"></div>
+                <img src="images/profile.png" alt="Tanzeel Raza Professional Profile Picture">
             </div>
-
-        </div>
-
-        <div class="home-image reveal">
-
-            <div class="circle"></div>
-
-            <img src="images/profile.png" alt="Profile Image">
-
-        </div>
-
-    </section>
+        </section>
 
         <!--================ ABOUT =================-->
-
-    <section class="about reveal" id="about">
-
-        <div class="about-image">
-
-            <img src="images/profile.png" alt="Profile Image">
-
-        </div>
-
-        <div class="about-content">
-
-            <h2 class="heading">
-                About Me
-            </h2>
-
-            <h3>
-                Full Stack Developer
-            </h3>
-
-            <p>
-
-                Hello! I'm <strong>Tanzeel Raza</strong>, a passionate Full Stack
-                Developer from Pakistan.
-
-                I enjoy building modern, responsive and user-friendly
-                websites using HTML, CSS, JavaScript and Python.
-
-                My goal is to create beautiful web applications that
-                solve real-world problems.
-
-            </p>
-
-            <div class="about-info">
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-user"></i>
-
-                    <h4>Name</h4>
-
-                    <span>Tanzeel Raza</span>
-
-                </div>
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <h4>Email</h4>
-
-                    <span>tanzeelraza03@gmail.com</span>
-
-                </div>
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <h4>Location</h4>
-
-                    <span>Punjab, Pakistan</span>
-
-                </div>
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-briefcase"></i>
-
-                    <h4>Experience</h4>
-
-                    <span>Fresher</span>
-
-                </div>
-
+        <section class="about reveal" id="about">
+            <div class="about-image">
+                <img src="images/profile.png" alt="About Tanzeel Raza">
             </div>
 
-        </div>
+            <div class="about-content">
+                <h2 class="heading">About Me</h2>
+                <h3>Full Stack Software Engineer</h3>
+                <p>
+                    Hello! I'm <strong>Tanzeel Raza</strong>, an ambitious Full Stack Developer based in Punjab, Pakistan.
+                    I excel in designing scalable backend infrastructure alongside modern frontend interfaces using standard industry practices.
+                </p>
 
-    </section>
+                <div class="about-info">
+                    <div class="info-box">
+                        <i class="fa-solid fa-user"></i>
+                        <h4>Name</h4>
+                        <span>Tanzeel Raza</span>
+                    </div>
 
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <span>tanzeelraza03@gmail.com</span>
+                    </div>
 
-    <!--================ SKILLS =================-->
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Location</h4>
+                        <span>Punjab, Pakistan</span>
+                    </div>
 
-    <section class="skills reveal" id="skills">
+                    <div class="info-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h4>Experience</h4>
+                        <span>Junior / Associate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2 class="heading">
-            My Skills
-        </h2>
+        <!--================ SKILLS =================-->
+        <section class="skills reveal" id="skills">
+            <h2 class="heading">Technical Proficiency</h2>
 
-        <div class="skill-container">
-
-            <!-- HTML -->
-
-            <div class="skill-box">
-
-                <h3>HTML</h3>
-
-                <div class="bar">
-
-                    <span style="width:95%">
-                        95%
-                    </span>
-
+            <div class="skill-container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>HTML5 & Semantic Markup</h3>
+                        <span>95%</span>
+                    </div>
+                    <div class="bar"><span data-width="95%"></span></div>
                 </div>
 
-            </div>
-
-            <!-- CSS -->
-
-            <div class="skill-box">
-
-                <h3>CSS</h3>
-
-                <div class="bar">
-
-                    <span style="width:92%">
-                        92%
-                    </span>
-
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>CSS3 & Modern Layouts</h3>
+                        <span>92%</span>
+                    </div>
+                    <div class="bar"><span data-width="92%"></span></div>
                 </div>
 
-            </div>
-
-            <!-- JavaScript -->
-
-            <div class="skill-box">
-
-                <h3>JavaScript</h3>
-
-                <div class="bar">
-
-                    <span style="width:88%">
-                        88%
-                    </span>
-
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>JavaScript (ES6+)</h3>
+                        <span>88%</span>
+                    </div>
+                    <div class="bar"><span data-width="88%"></span></div>
                 </div>
 
-            </div>
-
-            <!-- Python -->
-
-            <div class="skill-box">
-
-                <h3>Python</h3>
-
-                <div class="bar">
-
-                    <span style="width:90%">
-                        90%
-                    </span>
-
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>Python & Backend Architecture</h3>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar"><span data-width="90%"></span></div>
                 </div>
 
-            </div>
-
-            <!-- Bootstrap -->
-
-            <div class="skill-box">
-
-                <h3>Bootstrap</h3>
-
-                <div class="bar">
-
-                    <span style="width:90%">
-                        90%
-                    </span>
-
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>Bootstrap & Frameworks</h3>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar"><span data-width="90%"></span></div>
                 </div>
 
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <h3>Git, GitHub & CI/CD</h3>
+                        <span>85%</span>
+                    </div>
+                    <div class="bar"><span data-width="85%"></span></div>
+                </div>
             </div>
+        </section>
 
-            <!-- Git -->
+        <!--================ PROJECTS =================-->
+        <section class="projects reveal" id="projects">
+            <h2 class="heading">Featured Work</h2>
 
-            <div class="skill-box">
-
-                <h3>Git & GitHub</h3>
-
-                <div class="bar">
-
-                    <span style="width:85%">
-                        85%
-                    </span>
-
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Enterprise Portfolio Platform</h3>
+                    <p>Modern dark/light adaptive portfolio built with high-performance CSS grid, GPU-accelerated animations, and responsive layouts.</p>
+                    <div class="project-btn">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
                 </div>
 
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                    <h3>Library Management Suite</h3>
+                    <p>Python OOP application integrated with modern authentication, loan management algorithms, and persistent data storage.</p>
+                    <div class="project-btn">
+                        <a href="#" class="btn btn-primary">Preview App</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3>E-Commerce Ecosystem</h3>
+                    <p>Dynamic responsive shopping platform with dynamic cart management, rich visual styling, and accessible component libraries.</p>
+                    <div class="project-btn">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-    <!--================ PROJECTS =================-->
-
-<section class="projects reveal" id="projects">
-
-    <h2 class="heading">
-        Latest Projects
-    </h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-
-            <i class="fa-solid fa-laptop-code"></i>
-
-            <h3>Professional Portfolio</h3>
-
-            <p>
-                Modern responsive portfolio website with dark/light mode,
-                smooth animations and premium UI.
-            </p>
-
-            <div class="project-btn">
-
-                <a href="#" class="btn">Live Demo</a>
-
-                <a href="#" class="btn btn2">GitHub</a>
-
+        <!--================ ACHIEVEMENTS =================-->
+        <section class="counter">
+            <div class="counter-box">
+                <h2 data-target="15">0</h2>
+                <p>Projects Completed</p>
             </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <i class="fa-solid fa-book"></i>
-
-            <h3>Library Management System</h3>
-
-            <p>
-                Python OOP based Library Management System with
-                Login, Registration, Issue and Return Books.
-            </p>
-
-            <div class="project-btn">
-
-                <a href="#" class="btn">Preview</a>
-
-                <a href="#" class="btn btn2">GitHub</a>
-
+            <div class="counter-box">
+                <h2 data-target="10">0</h2>
+                <p>Satisfied Clients</p>
             </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <i class="fa-solid fa-cart-shopping"></i>
-
-            <h3>E-Commerce Website</h3>
-
-            <p>
-                Responsive shopping website with modern UI,
-                product cards and shopping cart.
-            </p>
-
-            <div class="project-btn">
-
-                <a href="#" class="btn">Live Demo</a>
-
-                <a href="#" class="btn btn2">GitHub</a>
-
+            <div class="counter-box">
+                <h2 data-target="2">0</h2>
+                <p>Years Learning</p>
             </div>
+            <div class="counter-box">
+                <h2 data-target="100">0</h2>
+                <p>Quality Guarantee %</p>
+            </div>
+        </section>
 
+        <!--================ SERVICES =================-->
+        <section class="services reveal" id="services">
+            <h2 class="heading">Services Offered</h2>
+
+            <div class="service-container">
+                <div class="service-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>High-performance web applications built using cutting-edge standards and modern JS architectures.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Fluid user experiences optimized natively for dynamic viewport layouts across mobile, tablet, and desktop.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python Systems</h3>
+                    <p>Engineered automation workflows, backend logic, and object-oriented backend algorithms in Python.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Backend & Databases</h3>
+                    <p>Structured, scalable backend systems linked smoothly with SQL queries and relational databases.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI / UX Architecture</h3>
+                    <p>Clean, human-centered interfaces meticulously created with contrast guidelines and smooth motion physics.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Deployment & Cloud</h3>
+                    <p>Production releases using automated pipelines via GitHub Pages, Vercel, and Cloud infrastructure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--================ CONTACT =================-->
+        <section class="contact reveal" id="contact">
+            <h2 class="heading">Get In Touch</h2>
+            <p class="contact-text">Have a project or opportunity? Let's engineer something great together.</p>
+
+            <form id="contact-form">
+                <div class="input-box">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Subject">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <textarea cols="30" rows="6" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!--================ FOOTER =================-->
+    <footer>
+        <h2>Tanzeel Raza</h2>
+        <p>Full Stack Software Engineer | HTML5 • CSS3 • JavaScript • Python</p>
+
+        <div class="footer-icons">
+            <a href="https://github.com/tanzeelraza" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tanzeelraza" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/+923070408701" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+           
         </div>
 
-    </div>
-
-</section>
-
-
-<!--================ ACHIEVEMENTS =================-->
-
-<section class="counter">
-
-    <div class="counter-box">
-
-        <h2>15+</h2>
-
-        <p>Projects Completed</p>
-
-    </div>
-
-    <div class="counter-box">
-
-        <h2>10+</h2>
-
-        <p>Happy Clients</p>
-
-    </div>
-
-    <div class="counter-box">
-
-        <h2>2+</h2>
-
-        <p>Years Learning</p>
-
-    </div>
-
-    <div class="counter-box">
-
-        <h2>100%</h2>
-
-        <p>Passion</p>
-
-    </div>
-
-</section>
-
-
-<!--================ SERVICES =================-->
-
-<section class="services reveal" id="services">
-
-    <h2 class="heading">
-        My Services
-    </h2>
-
-    <div class="service-container">
-
-        <div class="service-box">
-
-            <i class="fa-solid fa-code"></i>
-
-            <h3>Web Development</h3>
-
-            <p>
-
-                Responsive websites using HTML, CSS, JavaScript
-                and modern technologies.
-
-            </p>
-
-        </div>
-
-        <div class="service-box">
-
-            <i class="fa-solid fa-mobile-screen-button"></i>
-
-            <h3>Responsive Design</h3>
-
-            <p>
-
-                Mobile friendly websites optimized for
-                every screen size.
-
-            </p>
-
-        </div>
-
-        <div class="service-box">
-
-            <i class="fa-brands fa-python"></i>
-
-            <h3>Python Development</h3>
-
-            <p>
-
-                Python applications, automation scripts
-                and desktop software.
-
-            </p>
-
-        </div>
-
-        <div class="service-box">
-
-            <i class="fa-solid fa-database"></i>
-
-            <h3>Backend Development</h3>
-
-            <p>
-
-                Building backend applications using
-                Python and SQL databases.
-
-            </p>
-
-        </div>
-
-        <div class="service-box">
-
-            <i class="fa-solid fa-palette"></i>
-
-            <h3>UI / UX Design</h3>
-
-            <p>
-
-                Clean, attractive and user-friendly
-                website interfaces.
-
-            </p>
-
-        </div>
-
-        <div class="service-box">
-
-            <i class="fa-solid fa-rocket"></i>
-
-            <h3>Website Deployment</h3>
-
-            <p>
-
-                Deploy websites on GitHub Pages
-                and Vercel.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ CONTACT =================-->
-
-<section class="contact reveal" id="contact">
-
-    <h2 class="heading">
-        Contact Me
-    </h2>
-
-    <p class="contact-text">
-        Have a project in mind? Let's build something amazing together.
-    </p>
-
-    <form action="#">
-
-        <div class="input-box">
-
-            <input type="text"
-                placeholder="Your Name"
-                required>
-
-            <input type="email"
-                placeholder="Email Address"
-                required>
-
-        </div>
-
-        <div class="input-box">
-
-            <input type="text"
-                placeholder="Subject">
-
-            <input type="text"
-                placeholder="Phone Number">
-
-        </div>
-
-        <textarea
-            cols="30"
-            rows="8"
-            placeholder="Write your message..."
-            required></textarea>
-
-        <button type="submit" class="btn">
-
-            Send Message
-
-        </button>
-
-    </form>
-
-</section>
-
-<!--================ FOOTER =================-->
-
-<footer>
-
-    <h2>Tanzeel Raza</h2>
-
-    <p>
-
-        Full Stack Developer | HTML | CSS | JavaScript | Python
-
-    </p>
-
-    <div class="footer-icons">
-
-        <a href="https://github.com/tanzeelraza" target="_blank"><i class="fab fa-github"></i></a>
-
-        <a href="https://www.linkedin.com/in/tanzeelraza" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-        <a href="https://wa.me/+923070408701" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-
-    </div>
-
-    <p class="copy">
-
-        © 2026 Tanzeel Raza. All Rights Reserved.
-
-    </p>
-
-</footer>
-
-<!--================ Back To Top =================-->
-
-<a href="#home" class="top-btn">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</a>
-
-<!--================ Cursor =================-->
-
-<div class="cursor"></div>
-
-<div class="cursor2"></div>
-
-<!--================ JavaScript =================-->
-
-<script src="script.js"></script>
-
+        <p class="copy">&copy; 2026 Tanzeel Raza. All Rights Reserved.</p>
+    </footer>
+
+    <!--========== Back To Top ==========-->
+    <a href="#home" class="top-btn" id="top-btn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!--========== Custom Cursor ==========-->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!--========== JavaScript ==========-->
+    <script src="script.js"></script>
 </body>
 
 </html>
